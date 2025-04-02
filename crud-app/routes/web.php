@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// router default
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get(uri: '/dashboard',action: [DashboardController::class, 'index']);
