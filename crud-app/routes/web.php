@@ -9,5 +9,5 @@ use App\Http\Controllers\DashboardController;
 // });
 
 // Route::get(uri: '/',action: [DashboardController::class, 'index']);
-Route::get('/', [DashboardController::class, 'index']);
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 // Route::get('/', [DashboardController::class, 'index']);

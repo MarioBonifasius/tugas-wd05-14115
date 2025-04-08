@@ -881,7 +881,7 @@
 <!-- Sparkline -->
 <script src="{{ asset(path:'plugins/sparklines/sparkline.js')}}"></script>
 <!-- JQVMap -->
-<script src="{{ asset(path:'plugins/jqvmap/jquery.vmap.min.js'}}"></script>
+<script src="{{ asset(path:'plugins/jqvmap/jquery.vmap.min.js')}}"></script>
 <script src="{{ asset(path:'plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
 <!-- jQuery Knob Chart -->
 <script src="{{ asset(path:'plugins/jquery-knob/jquery.knob.min.js')}}"></script>
