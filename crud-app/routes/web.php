@@ -8,4 +8,6 @@ use App\Http\Controllers\DashboardController;
 //     return view('welcome');
 // });
 
-Route::get(uri: '/dashboard',action: [DashboardController::class, 'index']);
+// Route::get(uri: '/',action: [DashboardController::class, 'index']);
+Route::get('/', [DashboardController::class, 'index']);
+// Route::get('/', [DashboardController::class, 'index']);
