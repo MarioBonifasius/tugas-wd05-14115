@@ -22,11 +22,7 @@ class ObatController extends Controller
             'harga' => 'required|integer'
         ]);
 
-        Obat::create([
-            'nama_obat' => $request->nama_obat,
-            'kemasan' => $request->kemasan,
-            'harga' => $request->harga
-        ]);
+        Obat::create($request->all());
 
         return redirect()->back();
     }
