@@ -78,6 +78,7 @@
             <option value="">Pilih Role</option>
             <option value="dokter">Dokter</option>
             <option value="pasien">Pasien</option>
+            <option value="admin">Admin</option>
           </select>
         </div>
 

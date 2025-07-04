@@ -48,6 +48,23 @@ Route::middleware('auth')->group(function () {
         return view('pasien.riwayat');
     })->name('pasien.riwayat');
 
+    /* --------- Admin --------- */
+    Route::get('/admin', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+
+    Route::get('/admin/periksa', function () {
+        return view('admin.periksa');
+    })->name('admin.periksa');
+
+    Route::get('/admin/riwayat', function () {
+        return view('admin.riwayat');
+    })->name('admin.riwayat');
+
+    Route::get('/admin/dokter', function () {
+        return view('admin.dokter');
+    })->name('admin.dokter');
+
   /* --------- Dokter --------- */
 
     Route::get('/dokter', function () {

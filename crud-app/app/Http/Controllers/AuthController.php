@@ -25,6 +25,8 @@ class AuthController extends Controller
                 return redirect()->route('dokter.dashboard');
             } elseif ($user->role === 'pasien') {
                 return redirect()->route('pasien.dashboard');
+            }if ($user->role === 'admin') {
+                return redirect()->route('admin.dashboard');
             }
         }
 
@@ -46,7 +48,7 @@ class AuthController extends Controller
             'no_hp' => 'required|string',
             'email' => 'required|email|unique:users',
             'password' => 'required|confirmed',
-            'role' => 'required|in:dokter,pasien',
+            'role' => 'required|in:dokter,pasien,admin',
         ]);
 
         User::create([
